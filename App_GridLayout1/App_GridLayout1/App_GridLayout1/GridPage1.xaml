@@ -5,10 +5,9 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="App_GridLayout1.GridPage1">
-    <ContentPage.Content>
+    
         <!--Grid com 2 linhas e 2 colunas - 4 células-->
-        <Grid BackgroundColor="Yellow">
-
+        <!--<Grid BackgroundColor="Yellow">
             <Grid.RowDefinitions>
                 <RowDefinition Height="100"/>
                 <RowDefinition Height="2*"/>
@@ -27,7 +26,9 @@
             <Label Grid.Row="1" Grid.Column="1" Text="Label4" BackgroundColor="Aqua"/>
             <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Label5" BackgroundColor="Aqua"/>
             <Label Grid.Column="2" Grid.RowSpan="3" Text="Label6" BackgroundColor="Aqua"/>
-
-        </Grid>
-    </ContentPage.Content>
+        </Grid>-->
+        
+    
 </ContentPage>
+        
+
