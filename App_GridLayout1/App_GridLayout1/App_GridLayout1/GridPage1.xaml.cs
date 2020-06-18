@@ -33,7 +33,32 @@ namespace App_GridLayout1
             grid.Children.Add(label3, 1, 0);
             grid.Children.Add(label4, 1, 1);
 
+            Grid.SetRowSpan(label1, 2);
+            Grid.SetColumnSpan(label2, 2);
+
+            grid.RowDefinitions.Add(new RowDefinition
+            {
+                Height = new GridLength(100, GridUnitType.Absolute)
+            });
+
+            grid.RowDefinitions.Add(new RowDefinition
+            {
+                Height = new GridLength(2, GridUnitType.Star)
+            });
+
+            grid.ColumnDefinitions.Add(new ColumnDefinition 
+            {
+                Width = new GridLength(1,GridUnitType.Auto)
+            });
+
+            grid.ColumnDefinitions.Add(new ColumnDefinition
+            {
+                Width = new GridLength(1, GridUnitType.Star)
+            });
+
             Content = grid;
         }
     }
 }
+            
+
