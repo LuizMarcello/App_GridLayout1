@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_GridLayout1.GridPage1">
+    <ContentPage.Content>
+        <!--Grid com 2 linhas e 2 colunas - 4 células-->
+        <Grid BackgroundColor="Yellow">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Label1" BackgroundColor="Aqua"/>
+            <Label Grid.Row="0" Grid.Column="1" Text="Label2" BackgroundColor="Aqua"/>
+            <Label Grid.Row="1" Grid.Column="0" Text="Label3" BackgroundColor="Aqua"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="Label4" BackgroundColor="Aqua"/>
+            <Label Grid.Row="2" Grid.ColumnSpan="3" Text="Label5" BackgroundColor="Aqua"/>
+            <Label Grid.Column="2" Grid.RowSpan="3" Text="Label6" BackgroundColor="Aqua"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
