@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App_GridLayout1.GridExercicio2">
+             
+
+    <Grid Padding="20" BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <StackLayout Grid.Row="0" VerticalOptions="Center">
+            <Label Text="Cadastro de Usuários" FontSize="30" TextColor="Purple" HorizontalOptions="Center"/>
+            <Label Text="Faça o login ou registre-se" TextColor="Gray" FontSize="18" HorizontalOptions="Center"/>
+        </StackLayout>
+
+        <Button Text="LOGIN" Grid.Row="1" BackgroundColor="#2073b7" TextColor="White" FontAttributes="Bold"/>
+        <Button Text="REGISTRAR" Grid.Row="2" BackgroundColor="#2073b7" TextColor="White" FontAttributes="Bold"/>
+    </Grid>
+    
+</ContentPage>

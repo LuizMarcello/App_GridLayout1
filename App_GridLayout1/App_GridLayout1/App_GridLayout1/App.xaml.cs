@@ -10,7 +10,7 @@ namespace App_GridLayout1
         {
             InitializeComponent();
 
-            MainPage = new GridPage1();
+            MainPage = new GridExercicio2();
         }
 
         protected override void OnStart()
